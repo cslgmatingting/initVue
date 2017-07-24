@@ -43,9 +43,10 @@
  */
 export default {
   name: 'five-star',
-  props:['score'],
+  // props:['score'],
   data() {
     return {
+      score: 5,
       width:0
     }
   },

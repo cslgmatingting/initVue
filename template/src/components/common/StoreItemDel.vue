@@ -40,31 +40,8 @@
 
 <script>
 
-/**
-shopInfo:{
- "_name": "东吴面馆（张家港店）",
- "activeAllDiscount": "",
- "activeType": "knockActive,discountActive,fullActivefeeActive,",
- "operatingStatus": "0",
- "ativeKnockId": "75374",
- "activeAllDiscountId": "",
- "activeDiscount": "冰点价格  你还有什么理由不来！",
- "merchantStatus": "4",
- "activeDiscountId": "76895,76895",
- "shopid": "56138",
- "activeFeedSend": "满15元，免配送费；",
- "distributionCost": 30,
- "logo": "http://jutu-app.oss-cn-shanghai.aliyuncs.com/20170509124858796597.jpg",
- "latLng": "",
- "activeFull": "满15元，赠 饮料 1份；",
- "activeFullId": "97258",
- "startPrice": 20,
- "radius": "3000;20.0,3.0,30",
- "ativeKnock": " 满10减8",
- "comments": 5,
- "_distance": "265"
-}
- */
+
+
 import DiscountItem from './DiscountItem.vue';
 import FiveStar from 'FiveStar'
 import { touchSwipe } from 'mixin'
@@ -75,11 +52,11 @@ export default {
     FiveStar
   },
   props: {
-    shopInfo: {
-      type: Object
-    },
-    isShowDel:{
-      type: Boolean
+    // shopInfo: {
+    //   type: Object
+    // },
+    // isShowDel:{
+    //   type: Boolean
     }
   },
   mixins: [touchSwipe],
@@ -87,6 +64,30 @@ export default {
     return {
       isShowAll:false,
       src:'https://fuss10.elemecdn.com/9/d9/5763287027bc10902e11952558278jpeg.jpeg',
+      shopInfo:{
+       "_name": "东吴面馆（张家港店）",
+       "activeAllDiscount": "",
+       "activeType": "knockActive,discountActive,fullActivefeeActive,",
+       "operatingStatus": "0",
+       "ativeKnockId": "75374",
+       "activeAllDiscountId": "",
+       "activeDiscount": "冰点价格  你还有什么理由不来！",
+       "merchantStatus": "4",
+       "activeDiscountId": "76895,76895",
+       "shopid": "56138",
+       "activeFeedSend": "满15元，免配送费；",
+       "distributionCost": 30,
+       "logo": "http://jutu-app.oss-cn-shanghai.aliyuncs.com/20170509124858796597.jpg",
+       "latLng": "",
+       "activeFull": "满15元，赠 饮料 1份；",
+       "activeFullId": "97258",
+       "startPrice": 20,
+       "radius": "3000;20.0,3.0,30",
+       "ativeKnock": " 满10减8",
+       "comments": 5,
+       "_distance": "265"
+      },
+      isShowDel: true,
       list:[
         // {
         //   typeName:'赠',
