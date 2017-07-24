@@ -79,7 +79,6 @@ module.exports = {
     			filename:'./index.html',
     			inject:true,
     			template:'./index.html',
-    			favicon:'favicon.ico',
     			hash:false,
           chunksSortMode: 'dependency'
     		}),
