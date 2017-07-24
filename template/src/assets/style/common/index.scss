@@ -1,0 +1,30 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.title-word{
+  font-size: 30px;
+  line-height: 44px;
+}
+.screen-cover{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(0,0,0,.3);
+}
+.load-complete{
+  padding: 10px 0;
+  text-align: center;
+  color: #ccc;
+}
+[v-cloak] { display: none }
+
+.router-slid-enter-active, .router-slid-leave-active {
+    transition: all .4s;
+}
+.router-slid-enter, .router-slid-leave-active {
+    transform: translate3d(2rem, 0, 0);
+    opacity: 0;
+}

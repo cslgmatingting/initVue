@@ -1,0 +1,18 @@
+@import "../common/index.scss";
+
+@mixin h3-title{
+  text-align: center;
+  font-size: 32px;
+  color: $dart-black;
+  line-height: 90px;
+}
+.home {
+  .init {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f6;
+  }
+  .head{
+    position: relative;
+  }
+}

@@ -1,0 +1,13 @@
+.DS_Store
+npm-debug.log
+.git
+# 忽略使用WebStorm开发时，生成的缓存文件夹
+.idea
+# 忽略使用VSCode开发时，生成的缓存文件夹
+.vscode
+tree.md
+sh.exe.stackdump
+# 文件夹
+
+build
+node_modules/
